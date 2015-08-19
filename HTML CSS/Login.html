@@ -21,6 +21,14 @@
 	font: bold 90% sans-serif;
 }
 </style>
+
+<link rel="stylesheet" type="text/css" href="css/ddlevelsmenu-base.css" />
+<link rel="stylesheet" type="text/css" href="css/ddlevelsmenu-topbar.css" />
+<link rel="stylesheet" type="text/css" href="css/ddlevelsmenu-sidebar.css" />
+
+<script type="text/javascript" src="js/ddlevelsmenu.js">
+
+</script>
 </head>
 
 <body>
@@ -30,17 +38,52 @@
         </div>
         <div class="btn-cont">
         	<div class="one">
-            	<a href="register.html"><div class="link1"></div></a>
-                <a href="login.html"><div class="link2"></div></a>
+            	<a href="register.html"><div class="link1">Register</div></a>
+                <a href="login.html"><div class="link2">Sign in</div></a>
             </div>
         </div>
         <div class="btn-contt2">
         	<div class="two">
-            	<div class="link7"></div>
-            	<div class="link6"></div>
-                <div class="link5"></div>
-                <div class="link4"></div>
-            	<div class="link3"></div>
+            <div id="ddtopmenubar" class="mattblackmenu">
+<ul>
+<li><a href="index.html"><div class="link3">Home</div></a></li>
+<li><a href="#"><div class="link4">Profile</div></a></li>
+<li><a href="#/" rel="ddsubmenu1"><div class="link5">Group</div></a></li>
+<li><a href="#" rel="ddsubmenu2"><div class="link6">Events</div></a></li>
+<li><a href="#" rel="ddsubmenu3"><div class="link7">Babysitter</div></a></li>
+</ul>
+</div>
+
+<script type="text/javascript">
+ddlevelsmenu.setup("ddtopmenubar", "topbar") //ddlevelsmenu.setup("mainmenuid", "topbar|sidebar")
+</script>
+
+
+<ul id="ddsubmenu1" class="ddsubmenustyle">
+<li><a href="#">Find a Group</a></li>
+<li><a href="#">Groups I Own or Admin</a></li>
+<li><a href="#">Groups I belong to</a></li>
+<li><a href="#">Create Group</a></li>
+</ul>
+
+<ul id="ddsubmenu2" class="ddsubmenustyle">
+<li><a href="#">Add Public Event</a></li>
+<li><a href="#">Select Venue</a></li>
+<li><a href="#">Find Public Event</a></li>
+<li><a href="#">My Public Events</a></li>
+</ul>
+
+<!--Top Drop Down Menu 3 HTML-->
+
+<ul id="ddsubmenu3" class="ddsubmenustyle">
+<li><a href="#">Register as Babysitter</a></li>
+<li><a href="#">Modify Babysitter</a></li>
+<li><a href="#">Register as Babysitter Employer</a></li>
+<li><a href="#">Modify Babysitter Employer</a></li>
+<li><a href="#">Babysitter Message Board</a></li>
+<li><a href="#">Search Babysitter</a></li>
+<li><a href="#">Image Collection</a></li>
+</ul>     
             </div>    
         </div>
     </div>
